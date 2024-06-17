@@ -1,12 +1,57 @@
-*{
+* {
     padding: 0;
     margin: 0;
     list-style: none;
     box-sizing: border-box;
-
 }
 
-body{
-    font-family: 'Trebuchet MS';
-    
+body {
+    font-family: 'Trebuchet MS', sans-serif;
 }
+
+nav {
+    background: black;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+label.logo1 {
+    color: white;
+    font-size: 1.8rem; /* Ajustado a unidades rem */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1rem; /* Ajustado a unidades rem */
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(163, 44, 44, 0.821);
+    border-radius: 5px;
+}
+
+nav ul li a.activo {
+    background-color: rgba(255, 255, 255, 0.3); /* Ejemplo de estilo para enlace activo */
+    border-radius: 5px;
+}
+
+
